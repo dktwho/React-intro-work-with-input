@@ -13,16 +13,21 @@ function App() {
 
   return (
     <div className="App">
+      Текст первого инпута выводится в первый абзац, а текст второго инпута - во второй абзац. <br />
+
       <input value={value} onChange={handleChange} /> 
-      {value}
+      text 1: {value}
       <br />
        
       <input value={value2} onChange={(e) => setValue2(e.target.value)} />
-      {value2}
+      text 2: {value2}
       <br />
 
-      <input type='number' value={num} onChange={(e) => setNum(e.target.value)} />
-      <p>{num ** 2}</p>
+      <br />
+      Выводится квадрат вводимого числа:
+      <br />
+      <input type='number' value={num} onChange={(e) => setNum(e.target.value)} /> 
+      <p>{num ** 2}</p> 
 
     </div>
   );

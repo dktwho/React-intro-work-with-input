@@ -18,6 +18,7 @@ const App3 = () => {
 
   return (
     <div className='App'>
+      Cреднее арифметическое введенных чисел из 5 инпутов <br />
       <input type="number" value={value1} onChange={(e) => setValue1(Number(e.target.value))} /> <br />
       <input type="number" value={value2} onChange={(e) => setValue2(Number(e.target.value))} /> <br />
       <input type="number" value={value3} onChange={(e) => setValue3(Number(e.target.value))} /> <br />
